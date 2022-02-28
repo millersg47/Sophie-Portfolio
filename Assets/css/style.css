@@ -1,0 +1,43 @@
+header {
+    padding: 20px;
+    text-align: start;
+    background-color: beige;
+    color: darkslategray;
+    font-size:250%;
+}
+
+.menu {
+    display: inline-flex;
+    font-size: 60%;
+    align-items: flex-end;
+}
+
+.banner {
+    background-image:
+    url(/Sophie-Portfolio/Assets/images/banner_image.jpg);
+    height: 48px;
+    background-size: cover;
+}
+
+.line {
+        border-left: 6px solid darkslategrey;
+        height: 50px;
+        position: relative;
+        margin-left: -3px;
+        top: 0;
+      }
+
+.app1 {
+    position: relative;
+  }
+
+.image-headings {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkslategrey;
+    opacity: 62%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
