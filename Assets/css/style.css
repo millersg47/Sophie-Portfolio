@@ -1,43 +1,256 @@
+:root {
+  --colorA: darkslategray;
+  --colorB: #DDFFE7;
+  --colorC: #d3d3d3;
+  --imgborder: 7px solid #DDFFE7;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*assigns background and text colors and font size to header*/
 header {
-    padding: 20px;
-    text-align: start;
-    background-color: beige;
-    color: darkslategray;
-    font-size:250%;
+  background-color: var(--colorB);
+  color: var(--colorA);
+  font-size: 6rem;
 }
 
+/*assigns background color to text element and applies spacing within text*/
+header h1 span {
+  background-color: var(--colorC);
+  letter-spacing: .1em;
+}
+
+/*moves nav items to the right side of page*/
+.list {
+  text-align: right;
+}
+
+/*arranges header nav items inline; sets font size to 3.5xrem; creates a bolded effect; adds padding around list items*/
 .menu {
-    display: inline-flex;
-    font-size: 60%;
-    align-items: flex-end;
+  display: inline;
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 2%;
 }
 
+/*assigned color to header nav list items*/
+.menu_item {
+  color: var(--colorA);
+}
+
+/*aligns text within container to be aligned to the right; sets element colors and dimensions*/
 .banner {
-    background-image:
-    url(/Sophie-Portfolio/Assets/images/banner_image.jpg);
-    height: 48px;
-    background-size: cover;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  text-align: right;
+  color: var(--colorC);
+  background-color: var(--colorA);
 }
 
-.line {
-        border-left: 6px solid darkslategrey;
-        height: 50px;
-        position: relative;
-        margin-left: -3px;
-        top: 0;
+/*sets font sizing and placement of text within banner section*/
+.banner h1 {
+  font-size: 7rem;
+  margin-left: 40%;
+  margin-right: 2%;
+}
+
+/*assigns unique color to span within text element*/
+.name {
+  color: var(--colorB);
+  font-size: 8rem;
+}
+
+/*styles profile photo and positions it within the banner container in the bottom left corner*/
+.headshot {
+  width: 40%;
+  height: auto;
+  flex: 1 1 auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/*styles sections within page body to wrap and display in column format' adds margin around outer edge of container*/
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 3%;
+}
+
+/*adds border to left edge of elements to create a barrier between the headings and text or images in the container*/
+.content {
+  border-left: 5px solid var(--colorC);
+  width: 100%;
+  padding-left: 2%;
+}
+
+/*styles the box for the about section*/
+.about {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+
+/*styles heading font properties for all h1 elements in the sections container*/
+.title{
+  font-size: 8rem;
+  font-weight: 400;
+  padding-right: 2%;
+  text-align: right;
+}
+
+/*styles font within the about text body*/
+.about p {
+  font-size: 2.5rem;
+  padding: 2% 0% 2% 0%;
+}
+
+/*styles the box for the work section*/
+.work {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12%;
+}
+
+/*styles boxes with padding and column formatting*/
+.all_apps {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: fit-content;
+  padding: 2% 2% 2% 2%;
+}
+
+/*sets aaplication 1 image sizing, applies a variable border and makes it responsive*/
+.first_image {
+  height: auto;
+  max-width: 100%;
+  border: var(--imgborder);
+}
+
+/*styles colors for text and background on image headings*/
+.image_heading {
+  background-color: var(--colorA);
+  opacity: 40%;
+  color: var(--colorB);
+}
+
+/*styles the layout of all elements within secondary apps section with content in rows centered in the container*/
+.secondary_apps {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  transition: flex-basis 500ms linear;
+  justify-content: center;
+}
+
+/*sets image sizing and adds border around images in secondary app section*/
+.app_image {
+  border: var(--imgborder);
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+}
+
+/*sets desktop view to fill the container space with two elements per row*/
+.apps {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.hover:hover {
+  opacity: 60%;
+}
+
+/*styles the box for the contact section*/
+.contact {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* assigns element position for contact info list*/
+.contact_list {
+  text-align: left;
+  flex-flow: row nowrap;
+}
+
+/*adds padding to contact list*/
+.adds_padding {
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+/*styles contact list elements to be inline and adds font formatting*/
+.contact_items {
+  display: inline;
+  font-size: 3rem;
+  padding: 2%;
+}
+
+/*adds underline to phone number to match other contact links*/
+.underline {
+  text-decoration: underline;
+}
+
+/*media queries below used to assign breakpoints for responsive design*/
+  @media screen and (max-width: 768px) {
+    .banner .name {
+      display: block;
+      flex-wrap: nowrap;
+      flex-flow: row wrap;
+    }
+    .title {
+      font-size: 6rem;
+    }
+    .about p {
+      font-size: 1.5rem;
+    }
+    .contact_items {
+      font-size: 1.5rem;
+    }
+  }
+    @media screen and (max-width: 600px) {
+      .list {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+      }
+      .menu {
+        display: block;
+      }
+      .banner {
+        display: flex;
+        flex-direction: column;
+      }
+      .intro {
+        margin-left: 0;
+        margin-right: 2%;
+      }
+      .title {
+        font-size: 4rem;
+      }
+      .about p {
+        font-size: 1rem;
       }
 
-.app1 {
-    position: relative;
-  }
+      .apps {
+        flex: 1 0 100%;
+        max-width: 100%;
+      }
 
-.image-headings {
-    position: relative;
-    bottom: 20px;
-    right: 20px;
-    background-color: darkslategrey;
-    opacity: 62%;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+      .contact_items {
+        display: block;
+        font-size: 1.5rem;
+      }
+      .first_image {
+        height: 25%;
+      }
+    }
