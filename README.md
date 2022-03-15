@@ -22,3 +22,5 @@ Use this application to access Sophie's Portfolio webpage.
 ## CREDITS
 
 No other contributors are involved in this project at this time. 
+
+## END OF README
