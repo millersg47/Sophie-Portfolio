@@ -4,25 +4,31 @@
     <title>Sophie M Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./Assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
   </head>
   
   <body>
-      <header>
-          <h1><span>PORTFOLIO</span></h1>
-          <nav>
+      <header class ="container">
+        <div class="row">
+          <h1><span class="col">PORTFOLIO</span></h1>
+        </div>
+          <nav class="row">
               <ul class="list">
-                  <li class="menu">
+                  <li class="menu col-3 col-xs-12">
                       <a class="menu_item" href="#About">About Me </a>
                   </li>
-                  <li class="menu">
+                  <li class="menu col-3 col-xs-12">
                     <a class="menu_item" href="#Work">Work </a>
                   </li>
-                  <li class="menu">
+                  <li class="menu col-3 col-xs-12">
                     <a class="menu_item" href="#Contact">Contact Me </a>
                   </li>
-                  <li class="menu">
+                  <li class="menu col-3 col-xs-12">
                      <a class="menu_item" href="./Assets/Technical_Resume.pdf">Resume </a>
                   </li>
               </ul>
@@ -30,21 +36,23 @@
       </header>
 
       <main>
-        <section class="banner">
-          <h1 class="intro">Hi, my name is <span class="name">SOPHIE MILLER.</span> Let's work together.</h1>
-          <img class="headshot" src="./Assets/images/ProfPic.jpeg">
+        <section class="banner container">
+          <div class="row justify-content-space-between">
+            <img class="headshot" src="./Assets/images/ProfPic.jpeg">
+            <h1 class="intro col-lg-4 col-md-6 col-s-12">Hi, my name is <span class="name">SOPHIE MILLER.</span> Let's work together.</h1>
+          </div>
         </section>
 
-        <section class="sections">
-          <section class="about" id="About">
-            <h1 class="title">About Me</h1>
-            <div class="content">
+        <section class="sections container">
+          <section class="about row-justify-content-space-evenly" id="About">
+            <h1 class="title col-2">About</h1>
+            <div class="content col-10">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
           </section>
 
-          <section class="work" id="Work">
-             <h1 class="title">Work</h1>
+          <section class="work row" id="Work">
+             <h1 class="title col-2">Work</h1>
             <section class="all_apps content">
               <section class="app1 hover">
                 <a target="_blank" href="https://millersg47.github.io/StarParty/">
@@ -103,7 +111,7 @@
           </section>
         
          <section class="contact" id="Contact">
-             <h1 class="title">Contact Me</h1>
+             <h1 class="title">Contact</h1>
              <div class="content adds_padding">
               <ul class="contact_list">
                 <li class="contact_items menu_item underline"> 425.210.4447</li>
@@ -121,5 +129,6 @@
          </section>
         </section>
       </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*assigns background and text colors and font size to header*/
@@ -45,9 +45,9 @@ header h1 span {
 
 /*aligns text within container to be aligned to the right; sets element colors and dimensions*/
 .banner {
-  height: 650px;
+  height: 100%;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   text-align: right;
   color: var(--colorC);
   background-color: var(--colorA);
@@ -56,8 +56,8 @@ header h1 span {
 /*sets font sizing and placement of text within banner section*/
 .banner h1 {
   font-size: 7rem;
-  margin-left: 40%;
-  margin-right: 2%;
+  /* margin-left: 40%;
+  margin-right: 2%; */
 }
 
 /*assigns unique color to span within text element*/
@@ -69,49 +69,49 @@ header h1 span {
 /*styles profile photo and positions it within the banner container in the bottom left corner*/
 .headshot {
   width: 40%;
-  height: auto;
+  /* height: auto;
   flex: 1 1 auto;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
 /*styles sections within page body to wrap and display in column format' adds margin around outer edge of container*/
-.sections {
+/* .sections {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 3%;
-}
+} */
 
 /*adds border to left edge of elements to create a barrier between the headings and text or images in the container*/
 .content {
   border-left: 5px solid var(--colorC);
-  width: 100%;
-  padding-left: 2%;
+  /* width: 100%;
+  padding-left: 2%; */
 }
 
 /*styles the box for the about section*/
 .about {
-  display: inline-flex;
+  /* display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 2%;
+  margin-bottom: 2%; */
 }
 
 /*styles heading font properties for all h1 elements in the sections container*/
 .title{
   font-size: 8rem;
   font-weight: 400;
-  padding-right: 2%;
-  text-align: right;
+  /* padding-right: 2%;
+  text-align: right; */
 }
 
 /*styles font within the about text body*/
 .about p {
   font-size: 2.5rem;
   padding: 2% 0% 2% 0%;
-}
+} 
 
 /*styles the box for the work section*/
 .work {
@@ -127,7 +127,7 @@ header h1 span {
   flex-direction: column;
   height: fit-content;
   padding: 2% 2% 2% 2%;
-}
+} */
 
 /*sets aaplication 1 image sizing, applies a variable border and makes it responsive*/
 .first_image {
