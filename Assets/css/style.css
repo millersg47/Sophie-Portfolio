@@ -47,8 +47,6 @@ header h1 span {
 .banner {
   height: 100%;
   width: 100%;
-  /* position: relative; */
-  text-align: right;
   color: var(--colorC);
   background-color: var(--colorA);
 }
@@ -56,8 +54,6 @@ header h1 span {
 /*sets font sizing and placement of text within banner section*/
 .banner h1 {
   font-size: 7rem;
-  /* margin-left: 40%;
-  margin-right: 2%; */
 }
 
 /*assigns unique color to span within text element*/
@@ -69,42 +65,19 @@ header h1 span {
 /*styles profile photo and positions it within the banner container in the bottom left corner*/
 .headshot {
   width: 40%;
-  /* height: auto;
-  flex: 1 1 auto;
-  position: absolute;
-  left: 0;
-  bottom: 0; */
 }
 
-/*styles sections within page body to wrap and display in column format' adds margin around outer edge of container*/
-/* .sections {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 3%;
-} */
+
 
 /*adds border to left edge of elements to create a barrier between the headings and text or images in the container*/
 .content {
   border-left: 5px solid var(--colorC);
-  /* width: 100%;
-  padding-left: 2%; */
-}
-
-/*styles the box for the about section*/
-.about {
-  /* display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 2%; */
 }
 
 /*styles heading font properties for all h1 elements in the sections container*/
 .title{
-  font-size: 8rem;
+  font-size: 500%;
   font-weight: 400;
-  /* padding-right: 2%;
-  text-align: right; */
 }
 
 /*styles font within the about text body*/
@@ -115,24 +88,18 @@ header h1 span {
 
 /*styles the box for the work section*/
 .work {
-  display: inline-flex;
-  align-items: center;
+  width: 100%;
   margin-bottom: 12%;
 }
 
 /*styles boxes with padding and column formatting*/
 .all_apps {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: fit-content;
+  width: 100%;
   padding: 2% 2% 2% 2%;
 } */
 
 /*sets aaplication 1 image sizing, applies a variable border and makes it responsive*/
 .first_image {
-  height: auto;
-  max-width: 100%;
   border: var(--imgborder);
 }
 
@@ -145,52 +112,34 @@ header h1 span {
 
 /*styles the layout of all elements within secondary apps section with content in rows centered in the container*/
 .secondary_apps {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   transition: flex-basis 500ms linear;
-  justify-content: center;
 }
 
 /*sets image sizing and adds border around images in secondary app section*/
 .app_image {
   border: var(--imgborder);
   width: 100%;
-  height: auto;
+  /* height: auto; */
   margin-top: 1%;
-}
-
-/*sets desktop view to fill the container space with two elements per row*/
-.apps {
-  flex: 0 0 50%;
-  max-width: 50%;
 }
 
 .hover:hover {
   opacity: 60%;
 }
 
-/*styles the box for the contact section*/
 .contact {
-  display: inline-flex;
-  align-items: center;
+  /* display: inline-flex; */
+  /* align-items: center; */
 }
-
 /* assigns element position for contact info list*/
-.contact_list {
+.contact_list { 
   text-align: left;
   flex-flow: row nowrap;
 }
 
-/*adds padding to contact list*/
-.adds_padding {
-  padding-top: 6%;
-  padding-bottom: 6%;
-}
-
 /*styles contact list elements to be inline and adds font formatting*/
 .contact_items {
-  display: inline;
+  /* display: inline; */
   font-size: 3rem;
   padding: 2%;
 }
