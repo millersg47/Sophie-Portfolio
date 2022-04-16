@@ -5,7 +5,7 @@ Sophie's Portfolio is a webpage built to showcase my work as a web developer. It
 
 Access the webpage here:  https://millersg47.github.io/Sophie-Portfolio/
 
-![portfolio screenshot](./Assets/images/portfolio_screenshot.png)
+![portfolio screenshot](./Assets/images/portfolio-4-16.png)
 
 ## INSTALLATION
 
