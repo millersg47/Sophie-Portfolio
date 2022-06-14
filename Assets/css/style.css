@@ -60,17 +60,6 @@ header h1 span {
   color: var(--colorA);
 }
 
-/*adds border to left edge of elements to create a barrier between the headings and text or images in the container*/
-/* .content {
-  border-left: 5px solid var(--colorC);
-} */
-
-/*styles heading font properties for all h1 elements in the sections container*/
-/* .title {
-  font-size: 500%;
-  font-weight: 400;
-} */
-
 /*styles font within the about text body*/
 /* .about p {
   font-size: 2.5rem;
@@ -83,14 +72,8 @@ header h1 span {
   margin-bottom: 12%;
 } */
 
-/*styles boxes with padding and column formatting*/
-/* .all_apps {
-  width: 100%;
-  padding: 2% 2% 2% 2%;
-} */
-
 /*sets aaplication 1 image sizing, applies a variable border and makes it responsive*/
-.first_image {
+.hero_img {
   border: var(--imgborder);
 }
 
@@ -142,9 +125,7 @@ header h1 span {
 
 /*media queries below used to assign breakpoints for responsive design*/
 /* @media screen and (max-width: 768px) {
-  .title {
-    font-size: 6rem;
-  }
+
   .about p {
     font-size: 1.5rem;
   }
@@ -169,9 +150,6 @@ header h1 span {
     margin-left: 0;
     margin-right: 2%;
   }
-  .title {
-    font-size: 4rem;
-  }
   .about p {
     font-size: 1rem;
   }
@@ -184,8 +162,5 @@ header h1 span {
   .contact_items {
     display: block;
     font-size: 1.5rem;
-  }
-  .first_image {
-    height: 25%;
   }
 } */
