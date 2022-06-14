@@ -4,118 +4,227 @@
     <title>Sophie M Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./Assets/css/reset.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./Assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
   </head>
-  
-  <body>
-      <header class ="container">
-        <div class="row">
-          <h1><span class="col">PORTFOLIO</span></h1>
-        </div>
-          <nav class="row">
-              <ul class="list">
-                  <li class="menu col-3 col-xs-12">
-                      <a class="menu_item" href="#About">About Me </a>
-                  </li>
-                  <li class="menu col-3 col-xs-12">
-                    <a class="menu_item" href="#Work">Work </a>
-                  </li>
-                  <li class="menu col-3 col-xs-12">
-                    <a class="menu_item" href="#Contact">Contact Me </a>
-                  </li>
-                  <li class="menu col-3 col-xs-12">
-                     <a class="menu_item" href="./Assets/Technical_Resume.pdf">Resume </a>
-                  </li>
-              </ul>
-          </nav>
-      </header>
 
-      <main>
-        <section class="banner container">
-          <div class="row justify-content-space-between">
-            <img class="headshot" src="./Assets/images/ProfPic.jpeg">
-            <h1 class="intro col-lg-4 col-md-6 col-s-12 text-end">Hi, my name is <span class="name">SOPHIE MILLER.</span> Let's work together.</h1>
+  <body>
+    <header class="container">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand name" href="#">
+            <!-- <img
+                src="/docs/5.2/assets/brand/bootstrap-logo.svg"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              /> -->
+            SOPHIE M
+          </a>
+          <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+          <div class="navbar-collapse" id="navbarText">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#about">About</a>
+
+              <a class="nav-link" href="#work">Work</a>
+
+              <a class="nav-link" href="#contact">Contact</a>
+
+              <a class="nav-link" href="./Assets/Technical_Resume.pdf"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <div class="background-shape"> -->
+    <main>
+      <section class="sections container">
+        <section class="about row" id="About">
+          <h1 class="title col-2 m-0">About</h1>
+          <div class="content col-10 m-0">
+            <p>
+              Driven and curious Full Stack Web Developer with an focus on
+              writing elegant code in collaborative settings, who seeks out
+              opportunities for continuous improvement and learning. Pivoting
+              from a career in project management to software engineering
+              bringing with me experience in agile methodologies, project
+              scheduling and creative problem solving. Outside of coding and
+              software development, I enjoy running, cooking for friends, and
+              adventures in the PNW with my dog.
+            </p>
           </div>
         </section>
 
-        <section class="sections container">
-          <section class="about row" id="About">
-            <h1 class="title col-2 m-0">About</h1>
-            <div class="content col-10 m-0">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <section class="work row" id="Work">
+          <h1 class="title col-2 m-0">Work</h1>
+          <section class="all_apps col-10 m-0 content">
+            <div class="row">
+              <section class="app1 col-12 hover">
+                <a
+                  target="_blank"
+                  href="https://millersg47.github.io/StarParty/"
+                >
+                  <img
+                    class="first_image w-100"
+                    src="./Assets/images/StarParty_main_page.png"
+                    alt="StarParty Search Results webpage"
+                  />
+                </a>
+                <div class="image_heading">
+                  <h4>StarParty Application</h4>
+                  <h5>
+                    GitHub Repo:
+                    <a
+                      target="”_blank”"
+                      href="https://github.com/millersg47/StarParty"
+                      >https://github.com/millersg47/StarParty</a
+                    >
+                  </h5>
+                  <h5>
+                    Deployed Page:
+                    <a
+                      target="”_blank”"
+                      href="https://millersg47.github.io/StarParty/"
+                      >https://millersg47.github.io/StarParty/</a
+                    >
+                  </h5>
+                  <p>
+                    Group Project utlizing HTML, CSS, Javascript, Bulma, fetches
+                    from four APIs and local storage.
+                  </p>
+                </div>
+              </section>
             </div>
-          </section>
 
-          <section class="work row" id="Work">
-            <h1 class="title col-2 m-0">Work</h1>
-            <section class="all_apps col-10 m-0 content">
+            <section class="secondary_apps">
               <div class="row">
-                <section class="app1 col-12 hover">
-                  <a target="_blank" href="https://millersg47.github.io/StarParty/">
-                    <img class="first_image w-100" src="./Assets/images/StarParty_main_page.png" alt="StarParty Search Results webpage">
+                <section class="apps hover col-6">
+                  <a
+                    target="_blank"
+                    href="https://millersg47.github.io/password-generator/"
+                  >
+                    <img
+                      class="h-75 app_image"
+                      src="./Assets/images/password-generator-2.png"
+                      alt="password generator webpage with prompt about uppercase letters."
+                    />
                   </a>
                   <div class="image_heading">
-                    <h4>StarParty Application</h4>
-                    <h5>GitHub Repo: <a  target=”_blank” href="https://github.com/millersg47/StarParty">https://github.com/millersg47/StarParty</a></h5>
-                    <h5>Deployed Page: <a  target=”_blank” href="https://millersg47.github.io/StarParty/">https://millersg47.github.io/StarParty/</a></h5>
-                    <p>Group Project utlizing HTML, CSS, Javascript, Bulma, fetches from four APIs and local storage.</p>
+                    <h4>Password Generator</h4>
+                    <h5>
+                      GitHub Repo:
+                      <a
+                        target="”_blank”"
+                        href="https://github.com/millersg47/password-generator"
+                        >https://github.com/millersg47/password-generator
+                      </a>
+                    </h5>
+                    <h5>
+                      Deployed Page:
+                      <a
+                        target="”_blank”"
+                        href="https://millersg47.github.io/password-generator/"
+                        >https://millersg47.github.io/password-generator/
+                      </a>
+                    </h5>
+                    <p>
+                      Password generator application allows user to select
+                      different criteria and generates a random password based
+                      on their selections.
+                    </p>
+                  </div>
+                </section>
+                <section class="apps hover col-6">
+                  <a href="https://millersg47.github.io/weather-dashboard/">
+                    <img
+                      class="h-75 app_image"
+                      src="./Assets/images/weather-dash.png"
+                      alt="weather dashboard with current and forecasted weather loaded for Houston."
+                    />
+                  </a>
+                  <div class="image_heading">
+                    <h4>Weather Dashboard</h4>
+                    <h5>
+                      GitHub Repo:
+                      <a
+                        target="”_blank”"
+                        href="https://github.com/millersg47/weather-dashboard"
+                        >https://github.com/millersg47/weather-dashboard
+                      </a>
+                    </h5>
+                    <h5>
+                      Deployed Page:
+                      <a
+                        target="_blank"
+                        href="https://millersg47.github.io/weather-dashboard/"
+                      >
+                        https://millersg47.github.io/weather-dashboard/</a
+                      >
+                    </h5>
+                    <p>
+                      The weather dashboard application asks the user to input a
+                      city and it respond by displaying the current and
+                      forecasted weather for that location. It also stores their
+                      searches in buttons below the search field. On click these
+                      buttons will reload the weather for that location.
+                    </p>
                   </div>
                 </section>
               </div>
-      
-              <section class="secondary_apps">
-                <div class="row">
-                  <section class="apps hover col-6">
-                    <a target="_blank" href="https://millersg47.github.io/password-generator/">
-                      <img class="h-75 app_image" src="./Assets/images/password-generator-2.png" alt="password generator webpage with prompt about uppercase letters.">
-                    </a>
-                    <div class="image_heading">
-                      <h4>Password Generator</h4>
-                      <h5>GitHub Repo: <a  target=”_blank” href="https://github.com/millersg47/password-generator">https://github.com/millersg47/password-generator </a></h5>
-                      <h5>Deployed Page: <a  target=”_blank” href="https://millersg47.github.io/password-generator/">https://millersg47.github.io/password-generator/ </a></h5>
-                      <p>Password generator application allows user to select different criteria and generates a random password based on their selections.</p>
-                    </div>
-                  </section>
-                  <section class="apps hover col-6">
-                    <a href="https://millersg47.github.io/weather-dashboard/">
-                      <img class="h-75 app_image" src="./Assets/images/weather-dash.png" alt="weather dashboard with current and forecasted weather loaded for Houston.">
-                    </a>
-                    <div class="image_heading">
-                      <h4>Weather Dashboard</h4>
-                      <h5>GitHub Repo: <a  target=”_blank” href="https://github.com/millersg47/weather-dashboard">https://github.com/millersg47/weather-dashboard </a></h5>
-                      <h5>Deployed Page: <a target="_blank" href="https://millersg47.github.io/weather-dashboard/"> https://millersg47.github.io/weather-dashboard/</a></h5>
-                     <p>The weather dashboard application asks the user to input a city and it respond by displaying the current and forecasted weather for that location. It also stores their searches in buttons below the search field. On click these buttons will reload the weather for that location.</p>
-                    </div>
-                  </section>
-                </div>
-              </section>
             </section>
           </section>
-        
-         <section class="contact row" id="Contact">
-             <h1 class="title col-2 m-0">Contact</h1>
-             <div class="content col-10 m-0 py-6%">
-              <ul class="contact_list list-inline">
-                <li class="contact_items menu_item underline list-inline-item"> 425.210.4447</li>
-                <li class="contact_items list-inline-item">
-                  <a class="menu_item" href="mailto:millersg47@gmail.com">millersg47@gmail.com</a>
-                </li>
-                <li class="contact_items list-inline-item">
-                  <a class="menu_item" href="https://github.com/millersg47">GitHub</a>
-                </li>
-                <li class="contact_items list-inline-item">
-                   <a class="menu_item" href="https://www.linkedin.com/in/sophie-garner-miller/">Linkedin </a>
-                </li>
-            </ul>
-             </div>
-         </section>
         </section>
-      </main>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+
+        <section class="contact row" id="Contact">
+          <h1 class="title col-2 m-0">Contact</h1>
+          <div class="content col-10 m-0 py-6%">
+            <ul class="contact_list list-inline">
+              <li class="contact_items menu_item underline list-inline-item">
+                425.210.4447
+              </li>
+              <li class="contact_items list-inline-item">
+                <a class="menu_item" href="mailto:millersg47@gmail.com"
+                  >millersg47@gmail.com</a
+                >
+              </li>
+              <li class="contact_items list-inline-item">
+                <a class="menu_item" href="https://github.com/millersg47"
+                  >GitHub</a
+                >
+              </li>
+              <li class="contact_items list-inline-item">
+                <a
+                  class="menu_item"
+                  href="https://www.linkedin.com/in/sophie-garner-miller/"
+                  >Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

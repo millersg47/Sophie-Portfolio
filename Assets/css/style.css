@@ -1,99 +1,90 @@
 :root {
-  --colorA: darkslategray;
-  --colorB: #DDFFE7;
-  --colorC: #d3d3d3;
-  --imgborder: 7px solid #DDFFE7;
+  --colorA: #748b75;
+  --colorB: #e7e7e7;
+  --colorC: #f78154;
+  --colorD: #503d42;
+  --imgborder: 7px solid #f78154;
 }
 
-html {
+/* html {
   font-size: 62.5%;
-}
+} */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.name {
+  color: var(--colorC);
+}
+
+.custom-nav-item {
+  color: var(--colorD);
+}
+
+.background-shape {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid var(--colorC);
+  border-bottom: 25px solid transparent;
 }
 
 /*assigns background and text colors and font size to header*/
 header {
   background-color: var(--colorB);
   color: var(--colorA);
-  font-size: 6rem;
+  /* font-size: 6rem; */
 }
 
 /*assigns background color to text element and applies spacing within text*/
 header h1 span {
   background-color: var(--colorC);
-  letter-spacing: .1em;
+  /* letter-spacing: 0.1em; */
 }
 
 /*moves nav items to the right side of page*/
-.list {
+/* .list {
   text-align: right;
-}
+} */
 
 /*arranges header nav items inline; sets font size to 3.5xrem; creates a bolded effect; adds padding around list items*/
-.menu {
+/* .menu {
   display: inline;
   font-size: 3.5rem;
   font-weight: 700;
   padding: 2%;
-}
+} */
 
 /*assigned color to header nav list items*/
 .menu_item {
   color: var(--colorA);
 }
 
-/*aligns text within container to be aligned to the right; sets element colors and dimensions*/
-.banner {
-  height: 100%;
-  width: 100%;
-  color: var(--colorC);
-  background-color: var(--colorA);
-}
-
-/*sets font sizing and placement of text within banner section*/
-.banner h1 {
-  font-size: 7rem;
-}
-
-/*assigns unique color to span within text element*/
-.name {
-  color: var(--colorB);
-  font-size: 8rem;
-}
-
-/*styles profile photo and positions it within the banner container in the bottom left corner*/
-.headshot {
-  width: 40%;
-}
-
-
-
 /*adds border to left edge of elements to create a barrier between the headings and text or images in the container*/
-.content {
+/* .content {
   border-left: 5px solid var(--colorC);
-}
+} */
 
 /*styles heading font properties for all h1 elements in the sections container*/
-.title{
+/* .title {
   font-size: 500%;
   font-weight: 400;
-}
+} */
 
 /*styles font within the about text body*/
-.about p {
+/* .about p {
   font-size: 2.5rem;
   padding: 2% 0% 2% 0%;
-} 
+} */
 
 /*styles the box for the work section*/
-.work {
+/* .work {
   width: 100%;
   margin-bottom: 12%;
-}
+} */
 
 /*styles boxes with padding and column formatting*/
-.all_apps {
+/* .all_apps {
   width: 100%;
   padding: 2% 2% 2% 2%;
 } */
@@ -116,33 +107,33 @@ header h1 span {
 }
 
 /*sets image sizing and adds border around images in secondary app section*/
-.app_image {
+/* .app_image {
   border: var(--imgborder);
   width: 100%;
-  /* height: auto; */
+  height: auto;
   margin-top: 1%;
-}
+} */
 
 .hover:hover {
   opacity: 60%;
 }
 
-.contact {
-  /* display: inline-flex; */
-  /* align-items: center; */
-}
+/* .contact {
+  display: inline-flex;
+  align-items: center;
+} */
 /* assigns element position for contact info list*/
-.contact_list { 
+/* .contact_list { 
   text-align: left;
   flex-flow: row nowrap;
-}
+} */
 
 /*styles contact list elements to be inline and adds font formatting*/
-.contact_items {
-  /* display: inline; */
+/* .contact_items {
+  display: inline;
   font-size: 3rem;
   padding: 2%;
-}
+} */
 
 /*adds underline to phone number to match other contact links*/
 .underline {
@@ -150,56 +141,51 @@ header h1 span {
 }
 
 /*media queries below used to assign breakpoints for responsive design*/
-  @media screen and (max-width: 768px) {
-    .banner .name {
-      display: block;
-      flex-wrap: nowrap;
-      flex-flow: row wrap;
-    }
-    .title {
-      font-size: 6rem;
-    }
-    .about p {
-      font-size: 1.5rem;
-    }
-    .contact_items {
-      font-size: 1.5rem;
-    }
+/* @media screen and (max-width: 768px) {
+  .title {
+    font-size: 6rem;
   }
-    @media screen and (max-width: 600px) {
-      .list {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.5;
-      }
-      .menu {
-        display: block;
-      }
-      .banner {
-        display: flex;
-        flex-direction: column;
-      }
-      .intro {
-        margin-left: 0;
-        margin-right: 2%;
-      }
-      .title {
-        font-size: 4rem;
-      }
-      .about p {
-        font-size: 1rem;
-      }
+  .about p {
+    font-size: 1.5rem;
+  }
+  .contact_items {
+    font-size: 1.5rem;
+  }
+} */
+/* @media screen and (max-width: 600px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .menu {
+    display: block;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    margin-left: 0;
+    margin-right: 2%;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
 
-      .apps {
-        flex: 1 0 100%;
-        max-width: 100%;
-      }
+  .apps {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
 
-      .contact_items {
-        display: block;
-        font-size: 1.5rem;
-      }
-      .first_image {
-        height: 25%;
-      }
-    }
+  .contact_items {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .first_image {
+    height: 25%;
+  }
+} */
