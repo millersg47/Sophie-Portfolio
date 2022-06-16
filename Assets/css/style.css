@@ -3,18 +3,16 @@
   --colorB: #e7e7e7;
   --colorC: #f78154;
   --colorD: #503d42;
-  --imgborder: 7px solid #f78154;
+  --imgborder: 3px solid #f78154;
 }
 
-/* html {
-  font-size: 62.5%;
-} */
 body {
   font-family: "Roboto", sans-serif;
 }
 
 .name {
   color: var(--colorC);
+  font-weight: 900;
 }
 
 .custom-nav-item {
@@ -32,70 +30,46 @@ body {
 /*assigns background and text colors and font size to header*/
 header {
   background-color: var(--colorB);
-  color: var(--colorA);
-  /* font-size: 6rem; */
 }
 
-/*assigns background color to text element and applies spacing within text*/
-header h1 span {
-  background-color: var(--colorC);
-  /* letter-spacing: 0.1em; */
-}
-
-/*moves nav items to the right side of page*/
-/* .list {
+/*moves nav items to the right side of page and customizes styling*/
+.custom-nav {
   text-align: right;
-} */
-
-/*arranges header nav items inline; sets font size to 3.5xrem; creates a bolded effect; adds padding around list items*/
-/* .menu {
-  display: inline;
-  font-size: 3.5rem;
-  font-weight: 700;
-  padding: 2%;
-} */
-
-/*assigned color to header nav list items*/
-.menu_item {
-  color: var(--colorA);
+  color: var(--colorD);
+  font-weight: 500;
 }
 
-/*styles font within the about text body*/
-/* .about p {
-  font-size: 2.5rem;
-  padding: 2% 0% 2% 0%;
-} */
-
-/*styles the box for the work section*/
-/* .work {
-  width: 100%;
-  margin-bottom: 12%;
-} */
+.custom-img {
+  border: 1px solid var(--colorB);
+  border-radius: 6px;
+  padding: 5px;
+  width: 150px;
+}
 
 /*sets aaplication 1 image sizing, applies a variable border and makes it responsive*/
 .hero_img {
   border: var(--imgborder);
 }
 
+.custom-font {
+  color: var(--colorD);
+}
+
 /*styles colors for text and background on image headings*/
 .image_heading {
-  background-color: var(--colorA);
-  opacity: 40%;
+  background-color: var(--colorD);
+  opacity: 70%;
   color: var(--colorB);
+}
+
+.custom-link {
+  color: var(--colorA);
 }
 
 /*styles the layout of all elements within secondary apps section with content in rows centered in the container*/
 .secondary_apps {
   transition: flex-basis 500ms linear;
 }
-
-/*sets image sizing and adds border around images in secondary app section*/
-/* .app_image {
-  border: var(--imgborder);
-  width: 100%;
-  height: auto;
-  margin-top: 1%;
-} */
 
 .hover:hover {
   opacity: 60%;
@@ -112,11 +86,10 @@ header h1 span {
 } */
 
 /*styles contact list elements to be inline and adds font formatting*/
-/* .contact_items {
+.contact_items {
   display: inline;
-  font-size: 3rem;
   padding: 2%;
-} */
+}
 
 /*adds underline to phone number to match other contact links*/
 .underline {

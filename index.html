@@ -24,7 +24,7 @@
     <header class="container">
       <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand name" href="#">
+          <a class="navbar-brand name fs-1" href="#">
             <!-- <img
                 src="/docs/5.2/assets/brand/bootstrap-logo.svg"
                 alt=""
@@ -32,18 +32,25 @@
                 height="24"
                 class="d-inline-block align-text-top"
               /> -->
+
             SOPHIE M
           </a>
+          <img
+            src="./Assets/images/ProfPic.jpeg"
+            class="img-fluid custom-img"
+          />
           <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
           <div class="navbar-collapse" id="navbarText">
             <div class="navbar-nav">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link custom-nav" href="#About">About</a>
 
-              <a class="nav-link" href="#work">Work</a>
+              <a class="nav-link custom-nav" href="#Work">Work</a>
 
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link custom-nav" href="#Contact">Contact</a>
 
-              <a class="nav-link" href="./Assets/SMiller_Resume.pdf">Resume</a>
+              <a class="nav-link custom-nav" href="./Assets/SM_Resume.pdf"
+                >Resume</a
+              >
             </div>
           </div>
         </div>
@@ -54,9 +61,8 @@
     <main>
       <section class="sections container">
         <section class="about row" id="About">
-          <h1 class="col-2 m-0">About</h1>
+          <h1 class="col-2 m-0 fs-2 custom-font">About</h1>
           <div class="container col-10 m-0">
-            <!-- <img src="./Assets/images/ProfPic.jpeg" class="img-fluid" /> -->
             <p>
               Driven and curious Full Stack Web Developer with an focus on
               writing elegant code in collaborative settings, who seeks out
@@ -71,10 +77,10 @@
         </section>
 
         <section class="work row" id="Work">
-          <h1 class="col-2 m-0">Work</h1>
+          <h1 class="col-2 m-0 fs-2 custom-font">Work</h1>
           <section class="col-10 m-0">
             <div class="row">
-              <section class="col-6 hover">
+              <section class="col-12 hover">
                 <a
                   target="_blank"
                   href="https://local-exchange-hub.herokuapp.com/"
@@ -89,6 +95,7 @@
                   <h4>Local Exchange Hub</h4>
                   <h5>
                     <a
+                      class="custom-link"
                       target="”_blank”"
                       href="https://github.com/rkutsel/local-exchange-hub"
                       >Github Repo</a
@@ -96,63 +103,137 @@
                   </h5>
                   <h5>
                     <a
+                      class="custom-link"
                       target="”_blank”"
                       href="https://millersg47.github.io/StarParty/"
                       >Deployed Application</a
                     >
                   </h5>
                   <p>
-                    Full-stack application using MySQL, expressJS, Bulma,
+                    Full stack application using MySQL, expressJS, Bulma,
                     Javascript and various npm packages supporting user photo
                     uploads, autcomplete functionality on search and mapping.
-                    from four APIs and local storage.
+                    Application allows users to create account or login, then
+                    they can post items to exchange and comment on other user's
+                    posts to pursue an exchange.
                   </p>
                 </div>
               </section>
-              <section class="col-6 hover">
-                <a
-                  target="_blank"
-                  href="https://millersg47.github.io/StarParty/"
-                >
-                  <img
-                    class="hero_img w-100"
-                    src="./Assets/images/StarParty_main_page.png"
-                    alt="StarParty Search Results webpage"
-                  />
-                </a>
-                <div class="image_heading">
-                  <h4>StarParty Application</h4>
-                  <h5>
-                    <a
-                      target="”_blank”"
-                      href="https://github.com/millersg47/StarParty"
-                      >Github Repo</a
-                    >
-                  </h5>
-                  <h5>
-                    <a
-                      target="”_blank”"
-                      href="https://millersg47.github.io/StarParty/"
-                      >Deployed Application</a
-                    >
-                  </h5>
-                  <p>
-                    Front-end application utlizing HTML, CSS, Javascript, Bulma,
-                    fetches from four APIs and local storage.
-                  </p>
-                </div>
-              </section>
+              <div class="row">
+                <section class="col-8 hover">
+                  <a
+                    target="_blank"
+                    href="https://millersg47.github.io/StarParty/"
+                  >
+                    <img
+                      class="hero_img w-100"
+                      src="./Assets/images/StarParty_main_page.png"
+                      alt="StarParty Search Results webpage"
+                    />
+                  </a>
+                  <div class="image_heading">
+                    <h4>StarParty Application</h4>
+                    <h5>
+                      <a
+                        class="custom-link"
+                        target="”_blank”"
+                        href="https://github.com/millersg47/StarParty"
+                        >Github Repo</a
+                      >
+                    </h5>
+                    <h5>
+                      <a
+                        class="custom-link"
+                        target="”_blank”"
+                        href="https://millersg47.github.io/StarParty/"
+                        >Deployed Application</a
+                      >
+                    </h5>
+                    <p>
+                      Front-end application utlizing HTML, CSS, Javascript,
+                      Bulma, fetches from four APIs and local storage.
+                    </p>
+                  </div>
+                </section>
+                <section class="apps hover col-4">
+                  <a
+                    target="_blank"
+                    href="https://tech-blog-mvc-sgm.herokuapp.com/"
+                  >
+                    <img
+                      class="hero_img w-100"
+                      src="./Assets/images/tech-blog.png"
+                      alt="tech blog login page with a login form and option to switch to sign up page"
+                    />
+                  </a>
+                  <div class="image_heading">
+                    <h4>Tech Blog</h4>
+                    <h5>
+                      <a
+                        class="custom-link"
+                        target="”_blank”"
+                        href="https://github.com/millersg47/tech-blog-MVC"
+                        >Github Repo
+                      </a>
+                    </h5>
+                    <h5>
+                      <a
+                        class="custom-link"
+                        target="”_blank”"
+                        href="https://tech-blog-mvc-sgm.herokuapp.com/"
+                        >Deployed Application
+                      </a>
+                    </h5>
+                    <p>
+                      A full stack application built using Model View Controller
+                      architecture, applying Javascript on front and back end,
+                      as well as MySQL, HTML, handlebars, and CSS.
+                    </p>
+                  </div>
+                </section>
+              </div>
             </div>
 
             <section class="secondary_apps">
               <div class="row">
-                <section class="apps hover col-6">
+                <section class="apps hover col-4">
+                  <a
+                    target="_blank"
+                    href="https://github.com/millersg47/team-profile-generator"
+                  >
+                    <img
+                      class="hero_img w-100"
+                      src="./Assets/images/team-profile-generator.png"
+                      alt="profile generator application output showing an example site page of a team with individual cards for each member"
+                    />
+                  </a>
+                  <div class="image_heading">
+                    <h4>Team Profile Generator</h4>
+                    <h5>
+                      <a
+                        class="custom-link"
+                        target="”_blank”"
+                        href="https://github.com/millersg47/team-profile-generator"
+                        >Github Repo
+                      </a>
+                    </h5>
+
+                    <p>
+                      Back end application written in Javascript in the NodeJS
+                      environment. Users interact with the application via
+                      terminal to input information about their team members and
+                      once complete an HTML file is generated to display their
+                      inputs.
+                    </p>
+                  </div>
+                </section>
+                <section class="apps hover col-4">
                   <a
                     target="_blank"
                     href="https://millersg47.github.io/password-generator/"
                   >
                     <img
-                      class="h-75 app_image"
+                      class="hero_img w-100"
                       src="./Assets/images/password-generator-2.png"
                       alt="password generator webpage with prompt about uppercase letters."
                     />
@@ -160,19 +241,19 @@
                   <div class="image_heading">
                     <h4>Password Generator</h4>
                     <h5>
-                      GitHub Repo:
                       <a
+                        class="custom-link"
                         target="”_blank”"
                         href="https://github.com/millersg47/password-generator"
-                        >https://github.com/millersg47/password-generator
+                        >Github Repo
                       </a>
                     </h5>
                     <h5>
-                      Deployed Page:
                       <a
+                        class="custom-link"
                         target="”_blank”"
                         href="https://millersg47.github.io/password-generator/"
-                        >https://millersg47.github.io/password-generator/
+                        >Deployed Application
                       </a>
                     </h5>
                     <p>
@@ -182,10 +263,10 @@
                     </p>
                   </div>
                 </section>
-                <section class="apps hover col-6">
+                <section class="apps hover col-4">
                   <a href="https://millersg47.github.io/weather-dashboard/">
                     <img
-                      class="h-75 app_image"
+                      class="hero_img w-100"
                       src="./Assets/images/weather-dash.png"
                       alt="weather dashboard with current and forecasted weather loaded for Houston."
                     />
@@ -193,20 +274,20 @@
                   <div class="image_heading">
                     <h4>Weather Dashboard</h4>
                     <h5>
-                      GitHub Repo:
                       <a
+                        class="custom-link"
                         target="”_blank”"
                         href="https://github.com/millersg47/weather-dashboard"
-                        >https://github.com/millersg47/weather-dashboard
+                        >Github Repo
                       </a>
                     </h5>
                     <h5>
-                      Deployed Page:
                       <a
+                        class="custom-link"
                         target="_blank"
                         href="https://millersg47.github.io/weather-dashboard/"
                       >
-                        https://millersg47.github.io/weather-dashboard/</a
+                        Deployed Application</a
                       >
                     </h5>
                     <p>
@@ -224,7 +305,7 @@
         </section>
 
         <section class="contact row" id="Contact">
-          <h1 class="title col-2 m-0">Contact</h1>
+          <h1 class="title col-2 m-0 fs-2 custom-font">Contact</h1>
           <div class="content col-10 m-0 py-6%">
             <ul class="contact_list list-inline">
               <li class="contact_items menu_item underline list-inline-item">
