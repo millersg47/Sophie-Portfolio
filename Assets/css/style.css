@@ -1,9 +1,9 @@
 :root {
-  --colorA: #748b75;
-  --colorB: #e7e7e7;
-  --colorC: #f78154;
-  --colorD: #503d42;
-  --imgborder: 3px solid #f78154;
+  --colorA: #90adc6;
+  --colorB: #e9eaec;
+  --colorC: #fad02c;
+  --colorD: #333652;
+  --imgborder: 3px solid #fad02c;
 }
 
 body {
@@ -13,6 +13,11 @@ body {
 .name {
   color: var(--colorC);
   font-weight: 900;
+}
+
+main {
+  background-color: var(--colorB);
+  border-top: 3px solid var(--colorC);
 }
 
 .custom-nav-item {
@@ -29,7 +34,10 @@ body {
 
 /*assigns background and text colors and font size to header*/
 header {
-  background-color: var(--colorB);
+  background-color: var(--colorA);
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /*moves nav items to the right side of page and customizes styling*/
@@ -57,13 +65,13 @@ header {
 
 /*styles colors for text and background on image headings*/
 .image_heading {
-  background-color: var(--colorD);
-  opacity: 70%;
-  color: var(--colorB);
+  background-color: var(--colorA);
+  opacity: 85%;
+  color: var(--colorD);
 }
 
 .custom-link {
-  color: var(--colorA);
+  color: var(--colorD);
 }
 
 /*styles the layout of all elements within secondary apps section with content in rows centered in the container*/
@@ -74,16 +82,6 @@ header {
 .hover:hover {
   opacity: 60%;
 }
-
-/* .contact {
-  display: inline-flex;
-  align-items: center;
-} */
-/* assigns element position for contact info list*/
-/* .contact_list { 
-  text-align: left;
-  flex-flow: row nowrap;
-} */
 
 /*styles contact list elements to be inline and adds font formatting*/
 .contact_items {
