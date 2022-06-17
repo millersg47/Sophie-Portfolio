@@ -21,34 +21,36 @@
   </head>
 
   <body>
-    <header class="container">
-      <nav class="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand name fs-1" href="#">
-            <!-- <img
-                src="/docs/5.2/assets/brand/bootstrap-logo.svg"
-                alt=""
-                width="30"
-                height="24"
-                class="d-inline-block align-text-top"
-              /> -->
+    <header class="container custom-header">
+      <nav>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex custom-column">
+            <a class="navbar-brand name fs-1" href="#">
+              <!-- <img
+                  src="/docs/5.2/assets/brand/bootstrap-logo.svg"
+                  alt=""
+                  width="30"
+                  height="24"
+                  class="d-inline-block align-text-top"
+                /> -->
 
-            SOPHIE M
-          </a>
-          <img
-            src="./Assets/images/ProfPic.jpeg"
-            class="img-fluid custom-img"
-          />
+              SOPHIE M
+            </a>
+            <img
+              src="./Assets/images/ProfPic.jpeg"
+              class="img-fluid custom-img"
+            />
+          </div>
           <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
           <div class="navbar-collapse" id="navbarText">
-            <div class="navbar-nav">
-              <a class="nav-link custom-nav" href="#About">About</a>
+            <div class="navbar-nav custom-nav">
+              <a class="nav-link custom-nav-item" href="#About">About</a>
 
-              <a class="nav-link custom-nav" href="#Work">Work</a>
+              <a class="nav-link custom-nav-item" href="#Work">Work</a>
 
-              <a class="nav-link custom-nav" href="#Contact">Contact</a>
+              <a class="nav-link custom-nav-item" href="#Contact">Contact</a>
 
-              <a class="nav-link custom-nav" href="./Assets/SM_Resume.pdf"
+              <a class="nav-link custom-nav-item" href="./Assets/SM_Resume.pdf"
                 >Resume</a
               >
             </div>
@@ -119,90 +121,92 @@
                   </p>
                 </div>
               </section>
-              <div class="row">
-                <section class="col-8 hover">
-                  <a
-                    target="_blank"
-                    href="https://millersg47.github.io/StarParty/"
-                  >
-                    <img
-                      class="hero_img w-100"
-                      src="./Assets/images/StarParty_main_page.png"
-                      alt="StarParty Search Results webpage"
-                    />
-                  </a>
-                  <div class="image_heading">
-                    <h4 class="fs-5">StarParty Application</h4>
-                    <h5>
-                      <a
-                        class="custom-link"
-                        target="”_blank”"
-                        href="https://github.com/millersg47/StarParty"
-                        >Github Repo</a
-                      >
-                    </h5>
-                    <h5>
-                      <a
-                        class="custom-link"
-                        target="”_blank”"
-                        href="https://millersg47.github.io/StarParty/"
-                        >Deployed Application</a
-                      >
-                    </h5>
-                    <p>
-                      Front-end application utlizing HTML, CSS, Javascript,
-                      Bulma, fetches from four APIs and local storage.
-                    </p>
-                  </div>
-                </section>
-                <section class="apps hover col-4">
-                  <a
-                    target="_blank"
-                    href="https://tech-blog-mvc-sgm.herokuapp.com/"
-                  >
-                    <img
-                      class="hero_img w-100"
-                      src="./Assets/images/tech-blog.png"
-                      alt="tech blog login page with a login form and option to switch to sign up page"
-                    />
-                  </a>
-                  <div class="image_heading">
-                    <h4 class="fs-5">Tech Blog</h4>
-                    <h5>
-                      <a
-                        class="custom-link"
-                        target="”_blank”"
-                        href="https://github.com/millersg47/tech-blog-MVC"
-                        >Github Repo
-                      </a>
-                    </h5>
-                    <h5>
-                      <a
-                        class="custom-link"
-                        target="”_blank”"
-                        href="https://tech-blog-mvc-sgm.herokuapp.com/"
-                        >Deployed Application
-                      </a>
-                    </h5>
-                    <p>
-                      A full stack application built using Model View Controller
-                      architecture, applying Javascript on front and back end,
-                      as well as MySQL, HTML, handlebars, and CSS.
-                    </p>
-                  </div>
-                </section>
-              </div>
             </div>
-
+            <div class="row">
+              <section class="col-8 col-sm-6 hover custom-project-card">
+                <a
+                  class="project-card-link"
+                  target="_blank"
+                  href="https://millersg47.github.io/StarParty/"
+                >
+                  <img
+                    class="hero_img w-100 project-img"
+                    src="./Assets/images/StarParty_main_page.png"
+                    alt="StarParty Search Results webpage"
+                  />
+                </a>
+                <div class="image_heading">
+                  <h4 class="fs-5">StarParty Application</h4>
+                  <h5>
+                    <a
+                      class="custom-link"
+                      target="”_blank”"
+                      href="https://github.com/millersg47/StarParty"
+                      >Github Repo</a
+                    >
+                  </h5>
+                  <h5>
+                    <a
+                      class="custom-link"
+                      target="”_blank”"
+                      href="https://millersg47.github.io/StarParty/"
+                      >Deployed Application</a
+                    >
+                  </h5>
+                  <p>
+                    Front-end application utlizing HTML, CSS, Javascript, Bulma,
+                    fetches from four APIs and local storage.
+                  </p>
+                </div>
+              </section>
+              <section class="apps hover col-4 col-md-6 custom-project-card">
+                <a
+                  class="project-card-link"
+                  target="_blank"
+                  href="https://tech-blog-mvc-sgm.herokuapp.com/"
+                >
+                  <img
+                    class="hero_img w-100 project-img"
+                    src="./Assets/images/tech-blog.png"
+                    alt="tech blog login page with a login form and option to switch to sign up page"
+                  />
+                </a>
+                <div class="image_heading">
+                  <h4 class="fs-5">Tech Blog</h4>
+                  <h5>
+                    <a
+                      class="custom-link"
+                      target="”_blank”"
+                      href="https://github.com/millersg47/tech-blog-MVC"
+                      >Github Repo
+                    </a>
+                  </h5>
+                  <h5>
+                    <a
+                      class="custom-link"
+                      target="”_blank”"
+                      href="https://tech-blog-mvc-sgm.herokuapp.com/"
+                      >Deployed Application
+                    </a>
+                  </h5>
+                  <p>
+                    A full stack application built using Model View Controller
+                    architecture, applying Javascript on front and back end, as
+                    well as MySQL, HTML, handlebars, and CSS.
+                  </p>
+                </div>
+              </section>
+            </div>
             <section class="secondary_apps">
               <div class="row">
-                <section class="apps hover col-4">
+                <section class="apps hover col-4 custom-project-card">
                   <a
+                    class="project-card-link"
                     target="_blank"
                     href="https://github.com/millersg47/team-profile-generator"
                   >
                     <img
-                      class="hero_img w-100"
+                      class="hero_img w-100 project-img"
                       src="./Assets/images/team-profile-generator.png"
                       alt="profile generator application output showing an example site page of a team with individual cards for each member"
                     />
@@ -227,13 +231,14 @@
                     </p>
                   </div>
                 </section>
-                <section class="apps hover col-4">
+                <section class="apps hover col-4 custom-project-card">
                   <a
+                    class="project-card-link"
                     target="_blank"
                     href="https://millersg47.github.io/password-generator/"
                   >
                     <img
-                      class="hero_img w-100"
+                      class="hero_img w-100 project-img"
                       src="./Assets/images/password-generator-2.png"
                       alt="password generator webpage with prompt about uppercase letters."
                     />
@@ -263,10 +268,13 @@
                     </p>
                   </div>
                 </section>
-                <section class="apps hover col-4">
-                  <a href="https://millersg47.github.io/weather-dashboard/">
+                <section class="apps hover col-4 custom-project-card">
+                  <a
+                    class="project-card-link"
+                    href="https://millersg47.github.io/weather-dashboard/"
+                  >
                     <img
-                      class="hero_img w-100"
+                      class="hero_img w-100 project-img"
                       src="./Assets/images/weather-dash.png"
                       alt="weather dashboard with current and forecasted weather loaded for Houston."
                     />
